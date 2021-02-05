@@ -1,7 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
+
+
+
 // TODO: Create an array of questions for user input
-const questions = () =>
 inquirer.prompt([
     {
         type: "input",
@@ -16,7 +19,7 @@ inquirer.prompt([
       {
         type: "input",
         name: "tableofcontents",
-        message: "????",
+        message: "Table of Contents",
       },
       {
         type: "input",
@@ -38,15 +41,25 @@ inquirer.prompt([
         name: "tests",
         message: "Enter test details here.",
       },
-    ]);
 
-questions()
-.then((answers) => writeFileAsync('README.md', generateHTML(answers)))
+  ]).then(answers => {
+    const{applicationtitle, description, tableofcontents, installation, usage, contributions, input } = answers;
+
+
+
+
+  const readMeCreator = '
+  ${applicationtitle}
+  
+  
+  '
+
+  }
 
 // TODO: Create a function to write README file
-function writeFile("readme.md", data) {}
+function writeToFile("README.md", readMeCreator) {}
 
-
+// ^^^ FIGURE THIS OUT IN MORNING
 
 
 
