@@ -20,7 +20,7 @@ inquirer.prompt([
       },
       {
         type: "input",
-        name: "Installation",
+        name: "installation",
         message: "Input information needed for product install/execution.",
       },
       {
@@ -44,7 +44,11 @@ questions()
 .then((answers) => writeFileAsync('README.md', generateHTML(answers)))
 
 // TODO: Create a function to write README file
-function writeFile('README.md', data) {}
+function writeFile("readme.md", data) {}
+
+
+
+
 
 // TODO: Create a function to initialize app
 function init() {}
