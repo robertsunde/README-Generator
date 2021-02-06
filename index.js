@@ -55,8 +55,8 @@ return `
 ${answers.applicationtitle}
 ${answers.description}
   Table of Contents
-#${answers.applicationtitle}
-##${answers.description}
+# ${answers.applicationtitle}
+## ${answers.description}
 
 
 ${answers.installation}
