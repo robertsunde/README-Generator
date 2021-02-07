@@ -529,8 +529,9 @@ ${licenseBadge(answers.license)} <br/>
 <br/>
 ## Description
 ${answers.description} <br/>
-
-  Table of Contents <br/>
+<br/>
+<br/>
+## Table of Contents <br/>
 [Description](#description-) <br/>
 [Installation](#installation-) <br/>
 [Usage](#usage-) <br/>

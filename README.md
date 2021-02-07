@@ -5,8 +5,9 @@
 <br/>
 ## Description
 The Weather Application can be used to see a five day forecast in a city of your choice. <br/>
-
-  Table of Contents <br/>
+<br/>
+<br/>
+## Table of Contents <br/>
 [Description](#description-) <br/>
 [Installation](#installation-) <br/>
 [Usage](#usage-) <br/>
