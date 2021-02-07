@@ -20,7 +20,7 @@ else if (license==="GNU GPL v3") {
 
 licenseDescription = (license) => {
 if (license==="MIT") {
-  return `Copyright <2021> <robertsunde>
+  return `Copyright 2021 robertsunde
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
   
@@ -528,42 +528,43 @@ inquirer.prompt([
 
  const READMECreator = (answers) => {
 return `
-#${answers.applicationtitle} <br/>
-##${answers.description} <br/>
+# ${answers.applicationtitle} <br/>
+#Description
+${answers.description} <br/>
 ${licenseBadge(answers.license)} <br/>
 
   Table of Contents <br/>
 # ${answers.applicationtitle} <br/>
-## Description <br/>
-## Installation <br/>
-## Usage <br/>
-## License <br/>
-## Contributing <br/>
-## Tests <br/>
+[Description](#description) <br/>
+[Installation](#installation) <br/>
+[Usage](#usage) <br/>
+[License](#license) <br/>
+[Contributions](#contributions) <br/>
+[Tests](#tests) <br/>
 <br/>
 <br/>
-## Installation <br/>
+#Installation <br/>
 ${answers.installation} <br/>
 <br/>
 <br/>
-## Usage <br/>
+#Usage <br/>
 ${answers.usage} <br/>
 <br/>
 <br/>
-## License <br/>
+#License <br/>
 ${answers.license} <br/>
 ${licenseDescription(answers.license)} <br/>
 <br/>
 <br/>
-## Contributions <br/>
+#Contributions <br/>
 ${answers.contributions} <br/>
 <br/>
 <br/>
-## Tests <br/>
+#Tests <br/>
 ${answers.tests} <br/>
 <br/>
 <br/>
-## Questions <br/>
+#Questions <br/>
 Should any questions arise, please contact me at:
 Github: www.github.com/${answers.github} <br/>
 Email: ${answers.email} <br/>
