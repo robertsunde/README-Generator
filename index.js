@@ -527,7 +527,7 @@ return `
 ${licenseBadge(answers.license)} <br/>
 <br/>
 <br/>
-## Description
+## Description <br/>
 ${answers.description} <br/>
 <br/>
 <br/>
