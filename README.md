@@ -6,12 +6,12 @@ he Weather Application can be used to see a five day forecast in a city of your 
 
   Table of Contents <br/>
 # The Weather Application <br/>
-[Description](#description) <br/>
-[Installation](#installation) <br/>
-[Usage](#usage) <br/>
-[License](#license) <br/>
-[Contributions](#contributions) <br/>
-[Tests](#tests) <br/>
+[Description](#description-) <br/>
+[Installation](#installation-) <br/>
+[Usage](#usage-) <br/>
+[License](#license-) <br/>
+[Contributions](#contributions-) <br/>
+[Tests](#tests-) <br/>
 <br/>
 <br/>
 ## Installation <br/>
