@@ -14,15 +14,15 @@ he Weather Application can be used to see a five day forecast in a city of your 
 [Tests](#tests) <br/>
 <br/>
 <br/>
-##Installation <br/>
+## Installation <br/>
 Installation is not needed, this application is available through the web. <br/>
 <br/>
 <br/>
-##Usage <br/>
+## Usage <br/>
 To use, click within the search bar on the left side of the screen. Type a city of your choice in the search bar that is in the United States. Click the "Search" button. Recent searches will populate in list form on the left side of the screen. (these will link as "quick searches" for each that appears in the list) Today's weather will populate at the top-middle of the screen. A five-day forecast for the searched city will also populate at the bottom of the screen. Icons on each day will change for each search depending on the type of weather on that individual day. <br/>
 <br/>
 <br/>
-##License <br/>
+## License <br/>
 Mozilla Public License <br/>
 1. Definitions
   1.1. “Contributor”
