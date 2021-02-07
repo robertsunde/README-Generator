@@ -524,9 +524,11 @@ inquirer.prompt([
  const READMECreator = (answers) => {
 return `
 # ${answers.applicationtitle} <br/>
+${licenseBadge(answers.license)} <br/>
+<br/>
+<br/>
 ## Description
 ${answers.description} <br/>
-${licenseBadge(answers.license)} <br/>
 
   Table of Contents <br/>
 [Description](#description-) <br/>

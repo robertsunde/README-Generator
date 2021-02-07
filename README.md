@@ -1,8 +1,10 @@
 
 # The Weather Application <br/>
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) <br/>
+<br/>
+<br/>
 ## Description
 The Weather Application can be used to see a five day forecast in a city of your choice. <br/>
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) <br/>
 
   Table of Contents <br/>
 [Description](#description-) <br/>
