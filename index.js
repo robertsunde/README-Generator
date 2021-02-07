@@ -534,37 +534,37 @@ ${answers.description} <br/>
 ${licenseBadge(answers.license)} <br/>
 
   Table of Contents <br/>
-# ${answers.applicationtitle} <br/>
-[Description](#description) <br/>
-[Installation](#installation) <br/>
-[Usage](#usage) <br/>
-[License](#license) <br/>
-[Contributions](#contributions) <br/>
-[Tests](#tests) <br/>
+## ${answers.applicationtitle} <br/>
+[Description](#description-) <br/>
+[Installation](#installation-) <br/>
+[Usage](#usage-) <br/>
+[License](#license-) <br/>
+[Contributions](#contributions-) <br/>
+[Tests](#tests-) <br/>
 <br/>
 <br/>
-#Installation <br/>
+## Installation <br/>
 ${answers.installation} <br/>
 <br/>
 <br/>
-#Usage <br/>
+## Usage <br/>
 ${answers.usage} <br/>
 <br/>
 <br/>
-#License <br/>
+## License <br/>
 ${answers.license} <br/>
 ${licenseDescription(answers.license)} <br/>
 <br/>
 <br/>
-#Contributions <br/>
+## Contributions <br/>
 ${answers.contributions} <br/>
 <br/>
 <br/>
-#Tests <br/>
+## Tests <br/>
 ${answers.tests} <br/>
 <br/>
 <br/>
-#Questions <br/>
+## Questions <br/>
 Should any questions arise, please contact me at:
 Github: www.github.com/${answers.github} <br/>
 Email: ${answers.email} <br/>
