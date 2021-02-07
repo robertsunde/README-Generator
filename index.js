@@ -1,35 +1,37 @@
-// TODO: Include packages needed for this application
+// node packages required for function of application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path')
 
+// license badge function
 licenseBadge = (license) => {
-if (license==="MIT") {
-  return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-}
-else if (license==="Apache") {
-  return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-}
-else if (license==="Mozilla Public License") {
-  return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
-}
-else if (license==="GNU GPL v3") {
-  return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
-}
+  if (license === "MIT") {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  }
+  else if (license === "Apache") {
+    return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+  }
+  else if (license === "Mozilla Public License") {
+    return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+  }
+  else if (license === "GNU GPL v3") {
+    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+  }
 }
 
+// license description function
 licenseDescription = (license) => {
-if (license==="MIT") {
-  return `Copyright 2021 robertsunde
+  if (license === "MIT") {
+    return `Copyright 2021 robertsunde
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
   
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
   
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
-}
-else if (license==="Apache") {
-  return `Apache License
+  }
+  else if (license === "Apache") {
+    return `Apache License
   Version 2.0, January 2004
   http://www.apache.org/licenses/
   
@@ -101,9 +103,9 @@ else if (license==="Apache") {
   
   To apply the Apache License to your work, attach the following boilerplate notice, with the fields enclosed by brackets "[]" replaced with your own identifying information. (Don't include the brackets!) The text should be enclosed in the appropriate comment syntax for the file format. We also recommend that a file or class name and description of purpose be included on the same "printed page" as the copyright notice for easier identification within third-party archives.
 `
-}
-else if (license==="Mozilla Public License") {
-  return `1. Definitions
+  }
+  else if (license === "Mozilla Public License") {
+    return `1. Definitions
   1.1. “Contributor”
   means each individual or legal entity that creates, contributes to the creation of, or owns Covered Software.
   
@@ -252,9 +254,9 @@ else if (license==="Mozilla Public License") {
   
   Exhibit B - “Incompatible With Secondary Licenses” Notice
   This Source Code Form is “Incompatible With Secondary Licenses”, as defined by the Mozilla Public License, v. 2.0.`
-}
-else if (license==="GNU GPL v3") {
-return `Preamble
+  }
+  else if (license === "GNU GPL v3") {
+    return `Preamble
 The GNU General Public License is a free, copyleft license for software and other kinds of works.
 
 The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.
@@ -459,70 +461,88 @@ If the program does terminal interaction, make it output a short notice like thi
 
     <${answers.applicationtitle}>  Copyright (C) <2021>  <robertsunde>
     This program comes with ABSOLUTELY NO WARRANTY; `
-}
+  }
 }
 
 
-// TODO: Create an array of questions for user input
+// Question prompts for creation of README.
 inquirer.prompt([
-    {
-        type: "input",
-        name: "applicationtitle",
-        message: "What is the title of your application/project?",
-      },
-      {
-        type: "input",
-        name: "description",
-        message: "Enter a brief description about your application.",
-      },
-      {
-        type: "input",
-        name: "installation",
-        message: "Input information needed for product install/execution.",
-      },
-      {
-        type: "input",
-        name: "usage",
-        message: "Enter usage details here.",
-      },
-      {
-        type: "input",
-        name: "contributions",
-        message: "Include any contributors/resources here.",
-      },
-      {
-        type: "input",
-        name: "tests",
-        message: "Enter test details here.",
-      },
-      {
-        type: "input",
-        name: "github",
-        message: "Enter GitHub username here.",
-      },
-      {
-        type: "input",
-        name: "email",
-        message: "Enter contact email here.",
-      },
-      {
-        type: "list",
-        name: "license",
-        message: "Which license would you like to use?",
-        choices: ["MIT", "Apache", "Mozilla Public License", "GNU GPL v3"]
-      },
 
-  ])
+  // Application title here.
+  {
+    type: "input",
+    name: "applicationtitle",
+    message: "What is the title of your application/project?",
+  },
 
-  // writes readme file
-    .then((answers) => fs.writeFileSync('README.md', READMECreator(answers)))
+  // Description here.
+  {
+    type: "input",
+    name: "description",
+    message: "Enter a brief description about your application.",
+  },
+
+  // Installation requirements here.
+  {
+    type: "input",
+    name: "installation",
+    message: "Input information needed for product install/execution.",
+  },
+
+  // Usage details here.
+  {
+    type: "input",
+    name: "usage",
+    message: "Enter usage details here.",
+  },
+
+  // Contributions here.
+  {
+    type: "input",
+    name: "contributions",
+    message: "Include any contributors/resources here.",
+  },
+
+  // Test details here.
+  {
+    type: "input",
+    name: "tests",
+    message: "Enter test details here.",
+  },
+
+  // GitHub username here.
+  {
+    type: "input",
+    name: "github",
+    message: "Enter GitHub username here.",
+  },
+
+  // Contact email here.
+  {
+    type: "input",
+    name: "email",
+    message: "Enter contact email here.",
+  },
+
+  // License type here.
+  {
+    type: "list",
+    name: "license",
+    message: "Which license would you like to use?",
+    choices: ["MIT", "Apache", "Mozilla Public License", "GNU GPL v3"]
+  },
+
+])
+
+  // Writes readme file based on answers above.
+  .then((answers) => fs.writeFileSync('README.md', READMECreator(answers)))
 
 
-  
-// contents of readme file
 
- const READMECreator = (answers) => {
-return `
+// README Formatting
+
+const READMECreator = (answers) => {
+  return `
 # ${answers.applicationtitle} <br/>
 ${licenseBadge(answers.license)} <br/>
 <br/>
@@ -566,5 +586,5 @@ Should any questions arise, please contact me at: <br/>
 Github: www.github.com/${answers.github} <br/>
 Email: ${answers.email} <br/>
 `
-  }
+}
 
