@@ -477,11 +477,6 @@ inquirer.prompt([
       },
       {
         type: "input",
-        name: "tableofcontents",
-        message: "Table of Contents",
-      },
-      {
-        type: "input",
         name: "installation",
         message: "Input information needed for product install/execution.",
       },
@@ -529,12 +524,11 @@ inquirer.prompt([
  const READMECreator = (answers) => {
 return `
 # ${answers.applicationtitle} <br/>
-#Description
+## Description
 ${answers.description} <br/>
 ${licenseBadge(answers.license)} <br/>
 
   Table of Contents <br/>
-## ${answers.applicationtitle} <br/>
 [Description](#description-) <br/>
 [Installation](#installation-) <br/>
 [Usage](#usage-) <br/>
@@ -565,7 +559,7 @@ ${answers.tests} <br/>
 <br/>
 <br/>
 ## Questions <br/>
-Should any questions arise, please contact me at:
+Should any questions arise, please contact me at: <br/>
 Github: www.github.com/${answers.github} <br/>
 Email: ${answers.email} <br/>
 `
