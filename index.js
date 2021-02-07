@@ -524,6 +524,13 @@ inquirer.prompt([
     message: "Enter contact email here.",
   },
 
+  // Application photo here.
+  {
+    type: "input",
+    name: "photo",
+    message: "Please paste a read-me friendly application photo link here.",
+  },
+
   // License type here.
   {
     type: "list",
@@ -544,6 +551,7 @@ inquirer.prompt([
 const READMECreator = (answers) => {
   return `
 # ${answers.applicationtitle} <br/>
+${answers.photo} <br/>
 ${licenseBadge(answers.license)} <br/>
 <br/>
 <br/>
