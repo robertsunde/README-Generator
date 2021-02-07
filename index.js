@@ -501,6 +501,16 @@ inquirer.prompt([
         message: "Enter test details here.",
       },
       {
+        type: "input",
+        name: "github",
+        message: "Enter GitHub username here.",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Enter contact email here.",
+      },
+      {
         type: "list",
         name: "license",
         message: "Which license would you like to use?",
@@ -518,17 +528,45 @@ inquirer.prompt([
 
  const READMECreator = (answers) => {
 return `
-${licenseBadge(answers.license)}
-${answers.applicationtitle}
-${answers.description}
-  Table of Contents
-# ${answers.applicationtitle}
-## ${answers.description}
+#${answers.applicationtitle} <br/>
+##${answers.description} <br/>
+${licenseBadge(answers.license)} <br/>
 
-
-${answers.installation}
-${licenseDescription(answers.license)}
-
+  Table of Contents <br/>
+# ${answers.applicationtitle} <br/>
+## Description <br/>
+## Installation <br/>
+## Usage <br/>
+## License <br/>
+## Contributing <br/>
+## Tests <br/>
+<br/>
+<br/>
+## Installation <br/>
+${answers.installation} <br/>
+<br/>
+<br/>
+## Usage <br/>
+${answers.usage} <br/>
+<br/>
+<br/>
+## License <br/>
+${answers.license} <br/>
+${licenseDescription(answers.license)} <br/>
+<br/>
+<br/>
+## Contributions <br/>
+${answers.contributions} <br/>
+<br/>
+<br/>
+## Tests <br/>
+${answers.tests} <br/>
+<br/>
+<br/>
+## Questions <br/>
+Should any questions arise, please contact me at:
+Github: www.github.com/${answers.github} <br/>
+Email: ${answers.email} <br/>
 `
   }
 
