@@ -1,6 +1,11 @@
 
 # README Generator <br/>
+<<<<<<< HEAD
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br/>
+=======
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) <br/>
+>>>>>>> 766be1c70a0568795efda8c64d820d1f69900d8e
 <br/>
 <br/>
 ## Description <br/>
