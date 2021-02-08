@@ -18,11 +18,11 @@ The README Generator was made to create a pre-formatted README file based on pro
 <br/>
 <br/>
 ## Installation <br/>
-In order to install the needed node packages the command "npm install" must be entered in the terminal while the index.js file is selected. This will allow for the program to execute. Next, "node index.js" must be entered into the terminal. This will start the prompts required to create the README file. <br/>
+ In order to install the needed node packages the command "npm install" must be entered in the terminal while the index.js file is selected. This will allow for the program to execute. <br/>
 <br/>
 <br/>
 ## Usage <br/>
-After following the installation instructions, enter "node index.js" into the terminal while the file is selected. Next, follow the prompts and answer as directed. Once finished, this will generate a README file within the current folder. The file will be pre-formatted and ready to use. <br/>
+Enter usage details here. After following the installation instructions, enter "node index.js" into the terminal while the file is selected. Next, follow the prompts and answer as directed. Once finished, this will generate a README file within the current folder. The file will be pre-formatted and ready to use. <br/>
 <br/>
 <br/>
 ## License <br/>
@@ -37,11 +37,11 @@ Copyright 2021 robertsunde
 <br/>
 <br/>
 ## Contributions <br/>
-stackoverflow.com <br/> w3schools.com <br/> youtube.com <br/> npmjs.com <br/> nodejs.org <br/> <br/>
+stackoverflow.com w3schools.com youtube.com npmjs.com nodejs.org <br/>
 <br/>
 <br/>
 ## Tests <br/>
- <br/>
+none <br/>
 <br/>
 <br/>
 ## Questions <br/>
